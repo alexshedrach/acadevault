@@ -1,0 +1,5 @@
+# pnpm-workspace.yaml
+packages:
+  # Instructs pnpm to manage dependencies for these specific directories
+  - 'acadevault-client'
+  - 'acadevault-server'

@@ -1,0 +1,3 @@
+{
+  "/(public)/materials/category/[slug]/page": "app/(public)/materials/category/[slug]/page.js"
+}

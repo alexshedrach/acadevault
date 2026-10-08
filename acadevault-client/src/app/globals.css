@@ -1,0 +1,323 @@
+@import "tailwindcss";
+
+/* Default light theme values */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: Menlo, Monaco, Consolas, monospace;
+}
+
+/* Automatically applied in dark mode via system preference */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --accent: #3b82f6;
+    --accent-foreground: #0f172a;
+  }
+}
+
+/* Theme overrides via user selection (JS toggle) */
+html[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+}
+
+html[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --accent: #3b82f6;
+  --accent-foreground: #0f172a;
+}
+
+/* Global body styling */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* HEADING STYLES */
+@layer components {
+  .hero-headline {
+    @apply text-gray-800 drop-shadow-md text-2xl sm:text-3xl md:text-5xl font-extrabold leading-snug tracking-tight;
+  }
+
+  .hero-highlight {
+    @apply bg-gradient-to-r from-orange-500 via-gray-800 to-orange-700 bg-clip-text text-transparent;
+  }
+}
+
+/* INPUT STYLES */
+
+.input-style {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm bg-white placeholder:text-gray-500 transition duration-150 ease-in-out focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.form-label {
+  @apply block mb-1 text-sm font-medium text-gray-700;
+}
+
+.btn-primary {
+  @apply py-2 px-4 font-semibold rounded-lg shadow-md bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.oauth-btn {
+  @apply w-full flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium border border-gray-300 rounded-md bg-white shadow-sm hover:bg-gray-50 transition;
+}
+
+@layer components {
+  .auth-input {
+    @apply w-full px-4 py-2 bg-white/10 text-white border border-white/20 rounded-lg placeholder:text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent backdrop-blur-sm transition-all;
+  }
+
+  .auth-input:focus {
+    @apply backdrop-blur-md;
+  }
+}
+
+
+@layer base {
+
+  input,
+  button,
+  textarea {
+    @apply transition-colors duration-150 ease-in-out;
+  }
+}
+
+/* input::placeholder {
+  color: rgb(203 213 225 / 0.7);
+} */
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Show scrollbar */
+.scrollbar-show::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-show::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.scrollbar-show {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+}
+
+.glow-effect {
+  box-shadow: 0 0 4px #ff00ff, 0 0 8px #ff00ff, 0 0 16px #ff00ff;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-slow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+/* ANIMATION STYLES */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes ping-slow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.2);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.8);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animate-ping-slow {
+  animation: ping-slow 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.animate-ripple {
+  animation: ripple 0.6s linear;
+}
+
+.animate-blob {
+  animation: blob 10s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1440px;
+  }
+}

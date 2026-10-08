@@ -1,0 +1,14 @@
+{
+  "name": "acadevault",
+  "version": "1.0.0",
+  "description": "AcadeVault Monorepo Root",
+  "scripts": {
+    "dev:server": "pnpm --filter acadevault-server run dev",
+    "dev:client": "pnpm --filter acadevault-client run dev",
+    "dev": "concurrently -c \"cyan,magenta\" -p \"[{name}]\" -n \"SERVER,CLIENT\" \"pnpm run dev:server\" \"pnpm run dev:client\""
+  },
+  "packageManager": "pnpm@10.15.1",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

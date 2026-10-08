@@ -1,0 +1,59 @@
+{
+  "sorted_middleware": [],
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/_3129ad9a._.js",
+        "server/edge/chunks/[root-of-the-server]__4d8e8604._.js",
+        "server/edge/chunks/acadevault-client_edge-wrapper_2c1f4e18.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/dashboard/:path*{(\\\\.json)}?",
+          "originalSource": "/dashboard/:path*"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/login{(\\\\.json)}?",
+          "originalSource": "/login"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/signup{(\\\\.json)}?",
+          "originalSource": "/signup"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/forgot-password{(\\\\.json)}?",
+          "originalSource": "/forgot-password"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/reset-password{(\\\\.json)}?",
+          "originalSource": "/reset-password"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/activate-account/:path*{(\\\\.json)}?",
+          "originalSource": "/activate-account/:path*"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/resend-activation{(\\\\.json)}?",
+          "originalSource": "/resend-activation"
+        },
+        {
+          "regexp": "/:nextData(_next/data/[^/]{1,})?/activate-prompt{(\\\\.json)}?",
+          "originalSource": "/activate-prompt"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "ZQVAY83qfPSglKE8WUuaAxg4kmxfEs5y+CskV5sMB78=",
+        "__NEXT_PREVIEW_MODE_ID": "90562489216132ea05336a202db81675",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "4c34d674d8b365c0e810d297dc64bbcb06e2473047e9a540af07b73d1a137d86",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "d9db3ba7f175e90309439b4791bc1d7f7bc41d89aefa54cfa0a148d005272b62"
+      }
+    }
+  },
+  "instrumentation": null,
+  "functions": {}
+}

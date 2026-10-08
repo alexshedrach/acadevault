@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .header h1 {
+            color: #007bff;
+        }
+
+        .content {
+            padding: 20px 0;
+        }
+
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .order-table th,
+        .order-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .order-table th {
+            background: #007bff;
+            color: white;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+        }
+
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎉 Thank You for Your Order, {{firstName}}!</h1>
+        </div>
+        <div class="content">
+            <p>We appreciate your purchase! Here are your order details:</p>
+            <p><strong>Order ID:</strong> {{orderId}}</p>
+            <p><strong>Order Date:</strong> {{orderDate}}</p>
+            <table class="order-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{orderItemsHtml}}
+                </tbody>
+            </table>
+            <p><strong>Total:</strong> {{currency}} ${{grandTotal}}</p>
+            {{deliveryDetails}}
+            <a href="https://acadevault.com/my-orders" class="btn">View My Orders</a>
+        </div>
+        <div class="footer">
+            <p>Need help? Contact us at <a href="mailto:support@acadevault.com">support@acadevault.com</a></p>
+            <p>© 2025 AcadeMate. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

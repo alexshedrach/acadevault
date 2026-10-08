@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Digital Purchase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .header h1 {
+            color: #007bff;
+        }
+
+        .content {
+            padding: 20px 0;
+        }
+
+        .download-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .download-table th,
+        .download-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .download-table th {
+            background: #007bff;
+            color: white;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: center;
+            color: #888;
+        }
+
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Thank You for Your Purchase, {{firstName}}! 🎓</h1>
+        </div>
+        <div class="content">
+            <p>Your digital materials are now available. Below are your secure download codes:</p>
+            <table class="download-table">
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Download Code</th>
+                        <th>Expiration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{downloadItemsHtml}}
+                </tbody>
+            </table>
+            <p>🚀 <strong>How to Use:</strong></p>
+            <p>1️⃣ Log in to your <a href="https://acadevault.com/login" class="btn">AcadeMate Account</a></p>
+            <p>2️⃣ Enter your download code under **My Purchases**.</p>
+            <p>3️⃣ Enjoy your digital content! 🎉</p>
+            <a href="https://acadevault.com/my-downloads" class="btn">Access My Purchases</a>
+        </div>
+        <div class="footer">
+            <p>Need help? Contact us at <a href="mailto:support@acadevault.com">support@acadevault.com</a></p>
+            <p>© 2025 AcadeMate. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

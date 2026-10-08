@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/ALEX/Desktop/JS_PROJECTS/AcadeVault/acadevault-client/src/app/dashboard/admin/layout.js"],"sourcesContent":["\"use client\";\r\n\r\nimport { useRequireAuth } from \"@/hooks/useRequireAuth\";\r\n\r\nexport default function AdminAuthLayout({ children }) {\r\n  const { isRedirecting, hasInitialized } = useRequireAuth({\r\n    allowedRoles: [\"Admin\"],\r\n    redirectTo: \"/unauthorized\", // Optional fallback\r\n  });\r\n\r\n  if (!hasInitialized) return null;\r\n  if (isRedirecting) return null;\r\n\r\n  return <>{children}</>;\r\n}\r\n"],"names":[],"mappings":";;;;AAEA;;;AAFA;;AAIe,SAAS,gBAAgB,EAAE,QAAQ,EAAE;;IAClD,MAAM,EAAE,aAAa,EAAE,cAAc,EAAE,GAAG,CAAA,GAAA,yJAAA,CAAA,iBAAc,AAAD,EAAE;QACvD,cAAc;YAAC;SAAQ;QACvB,YAAY;IACd;IAEA,IAAI,CAAC,gBAAgB,OAAO;IAC5B,IAAI,eAAe,OAAO;IAE1B,qBAAO;kBAAG;;AACZ;GAVwB;;QACoB,yJAAA,CAAA,iBAAc;;;KADlC","debugId":null}}]
+}

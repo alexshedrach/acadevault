@@ -1,0 +1,9 @@
+{
+  "[project]/node_modules/.pnpm/react-icons@5.6.0_react@19.2.4/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/node_modules/.pnpm/react-icons@5.6.0_react@19.2.4/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/73ce3_react-icons_fa_index_mjs_d51484e6._.js",
+      "static/chunks/73ce3_react-icons_fa_index_mjs_ac1a57ab._.js"
+    ]
+  }
+}

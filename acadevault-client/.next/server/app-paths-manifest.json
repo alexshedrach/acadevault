@@ -1,0 +1,6 @@
+{
+  "/(public)/page": "app/(public)/page.js",
+  "/(public)/shop/[shopId]/page": "app/(public)/shop/[shopId]/page.js",
+  "/api/ai/faq/route": "app/api/ai/faq/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}

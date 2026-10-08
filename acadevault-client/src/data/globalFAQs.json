@@ -1,0 +1,70 @@
+[
+  {
+    "question": "How do I reset my password?",
+    "answer": "Click “Forgot password” on the login screen and follow the instructions emailed to you."
+  },
+  {
+    "question": "Where can I find academic materials?",
+    "answer": "Navigate to Materials → Browse to search by subject, rating, or tags."
+  },
+  {
+    "question": "How do I contact a shop owner?",
+    "answer": "Visit the shop’s page and click “Chat on WhatsApp” or use the contact form at the bottom."
+  },
+  {
+    "question": "Can I request a new feature?",
+    "answer": "Yes—drop us a line at support@acadevault.com or use the Feedback link in your profile menu."
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept bank transfers, credit/debit cards, and mobile payments. Specific options may vary per vendor."
+  },
+  {
+    "question": "How can I track my order?",
+    "answer": "Once your order is shipped, you'll receive a tracking ID via email or SMS. You can track it on our Order Tracking page."
+  },
+  {
+    "question": "Can I return or exchange items?",
+    "answer": "Yes, items can be returned or exchanged within 7 days if they are in good condition. Check the shop’s return policy for specific details."
+  },
+  {
+    "question": "Do you offer student discounts?",
+    "answer": "Some shops offer student discounts. Please check the product page or contact the shop directly for eligibility."
+  },
+  {
+    "question": "How do I contact customer support?",
+    "answer": "You can reach us through the Contact Us page or by messaging the shop directly from their profile."
+  },
+  {
+    "question": "How do I become a vendor on AcadeVault?",
+    "answer": "Click on 'Become a Vendor' in the footer or vendor dashboard and complete the registration form. You'll be contacted for verification."
+  },
+  {
+    "question": "What kind of materials can I sell?",
+    "answer": "Vendors can upload academic notes, past questions, research papers, eBooks, tutorials, and more—provided they meet our content guidelines."
+  },
+  {
+    "question": "How are vendor earnings paid out?",
+    "answer": "Payouts are processed weekly or monthly based on your preference, via bank transfer. Ensure your bank details are updated in your profile."
+  },
+  {
+    "question": "Is there a commission fee for vendors?",
+    "answer": "Yes, a small commission is deducted per sale to cover platform fees. Check the vendor dashboard for current rates."
+  },
+  {
+    "question": "How can I promote my shop or materials?",
+    "answer": "Use the Ads & Promotions section in your vendor dashboard to boost your listings or appear on featured sections."
+  },
+  {
+    "question": "Can I offer discounts or bundles?",
+    "answer": "Yes, you can create discount coupons or package deals via the Marketing tab in your vendor dashboard."
+  },
+  {
+    "question": "How can I respond to customer messages?",
+    "answer": "Use the built-in messaging system to reply to inquiries in real-time, or connect your WhatsApp number for direct contact."
+  },
+  {
+    "question": "Can I upload materials in bulk?",
+    "answer": "Yes, we support bulk upload via CSV and ZIP file uploads. Check the Bulk Upload section in the dashboard for instructions."
+  }
+]

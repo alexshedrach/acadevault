@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>New Material Submitted for Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1a73e8;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">📄 New Material Submitted for Review</div>
+        <div class="content">
+            <p>Dear Admin,</p>
+            <p>A new academic material titled <strong>{{materialTitle}}</strong> has been submitted for your review by
+                {{sellerName}}.</p>
+            <p>
+                <strong>Material ID:</strong> {{materialId}}<br />
+                <strong>Status:</strong> Pending Review
+            </p>
+            <p>Kindly review and take the necessary actions on the admin dashboard.</p>
+        </div>
+        <div class="footer">
+            <p>This is an automated email from AcadeMate. Please do not reply.</p>
+        </div>
+    </div>
+</body>
+
+</html>

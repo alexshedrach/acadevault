@@ -1,0 +1,10 @@
+const CHUNK_PUBLIC_PATH = "server/app/api/ai/faq/route.js";
+const runtime = require("../../../../chunks/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/075d9_next_7ad8440f._.js");
+runtime.loadChunk("server/chunks/98319_zod_v3_e3189fa0._.js");
+runtime.loadChunk("server/chunks/9ba6a_openai_13bb2fd0._.js");
+runtime.loadChunk("server/chunks/1ec0d_fuse_js_dist_fuse_mjs_c442a65e._.js");
+runtime.loadChunk("server/chunks/[root-of-the-server]__a9912475._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/acadevault-client/.next-internal/server/app/api/ai/faq/route/actions.js [app-rsc] (server actions loader, ecmascript)", CHUNK_PUBLIC_PATH);
+runtime.getOrInstantiateRuntimeModule("[project]/node_modules/.pnpm/next@15.3.2_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/acadevault-client/src/app/api/ai/faq/route.js [app-route] (ecmascript)\" } [app-route] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/.pnpm/next@15.3.2_react-dom@19.2.4_react@19.2.4__react@19.2.4/node_modules/next/dist/esm/build/templates/app-route.js { INNER_APP_ROUTE => \"[project]/acadevault-client/src/app/api/ai/faq/route.js [app-route] (ecmascript)\" } [app-route] (ecmascript)", CHUNK_PUBLIC_PATH).exports;

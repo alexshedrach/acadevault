@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/ALEX/Desktop/JS_PROJECTS/AcadeVault/acadevault-client/src/app/not-found.js"],"sourcesContent":["\"use client\";\r\n\r\nimport Link from \"next/link\";\r\n\r\nexport default function NotFound() {\r\n  return (\r\n    <div className=\"flex flex-col items-center justify-center h-screen px-4 text-center\">\r\n      <h1 className=\"text-5xl font-bold text-blue-600 mb-4\">404</h1>\r\n      <p className=\"text-lg text-gray-700 mb-6\">\r\n        The page you are looking for doesn’t exist.\r\n      </p>\r\n      <Link\r\n        href=\"/\"\r\n        className=\"px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition\"\r\n      >\r\n        Go to Homepage\r\n      </Link>\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,6WAAC;QAAI,WAAU;;0BACb,6WAAC;gBAAG,WAAU;0BAAwC;;;;;;0BACtD,6WAAC;gBAAE,WAAU;0BAA6B;;;;;;0BAG1C,6WAAC,2RAAA,CAAA,UAAI;gBACH,MAAK;gBACL,WAAU;0BACX;;;;;;;;;;;;AAKP","debugId":null}}]
+}

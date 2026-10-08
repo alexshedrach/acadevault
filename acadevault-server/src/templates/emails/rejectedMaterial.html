@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Material Update Rejected</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1a73e8;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px;
+            width: 150px;
+        }
+
+        .content {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #1558b0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #888;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 18px;
+            color: #1a73e8;
+        }
+
+        .signature {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="{{logoUrl}}" alt="AcadeMate Logo" class="logo">
+
+        <div class="header">❌ Material Update Rejected</div>
+
+        <div class="content">
+            <p>Hello {{firstName}},</p>
+            <p>Your requested updates for <strong>{{materialTitle}}</strong> have been rejected by the admin.</p>
+            <p><strong>Feedback:</strong> "{{feedback}}"</p>
+            <p>Please make the necessary revisions and resubmit your material for review.</p>
+            <p class="signature">
+                Best regards,<br>
+                The AcadeMate Team
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>If you have any questions, feel free to contact our support team or visit our <a
+                    href="{{supportPageUrl}}">Support Page</a>.</p>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/academate" target="_blank">Facebook</a>
+                <a href="https://twitter.com/academate" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/company/academate" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
